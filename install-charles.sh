@@ -13,12 +13,10 @@ tar -xf charles-proxy-4.6.2_amd64.tar.gz
 rsync -a charles /opt/ --remove-sent-files --ignore-existing --whole-file
 
 # Atualizar arquivo charles-proxy.desktop com dir absoluto da localização do ícone do Charles
-sed -i 's+../icon+/opt/charles/icon+g' /opt/charles/etc/charles-proxy.desktop
+sed -i 's+../icon/128x128/apps/charles-proxy.png+/opt/charles/icon/128x128/apps/charles-proxy.png+g' /opt/charles/etc/charles-proxy.desktop
 
 # Criar link simbólico
 sudo ln -s /opt/charles/etc/charles-proxy.desktop /usr/share/applications/charles.desktop
 
 # Fazer com o ambiente reconheça as alterações feitas
 source ~/.bashrc
-
-echo "Charles Proxy instalado"
