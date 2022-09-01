@@ -1,4 +1,4 @@
-#!/bin/bahs
+#!/bin/bash
 # author: Drian Freitas <drian.io>
 # collab: Luis Teixeira
 # Simple script to install charles proxy
